@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Randomness and Falling Balls Simulation</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="Open Day 2023 Logo">
+	</header>
+	<main>
+      <section>
+        <h2>What is Randomness?</h2>
+        <p>Randomness is like a box of chocolates. You never know what you're gonna get. But unlike chocolates, randomness is a fundamental concept in probability theory and statistics, and is used in many fields such as cryptography, computer science, and gaming. A random event is one that cannot be predicted beforehand with certainty. Unless you're a psychic, in which case, can you tell us the winning lottery numbers?</p>
+        <img src="images/dice.jpg" alt="A photo of a rolling dice" style="width: 50%">
+      </section>
+      <section>
+        <h2>Generating Random Numbers in Python</h2>
+        <p>Python provides several modules for generating random numbers. One of the most commonly used modules is the "random" module, which uses a pseudo-random number generator (PRNG) to produce random numbers. And just like a magician pulls a rabbit out of a hat, Python pulls a random number out of its hat. Abracadabra!</p>
+        <pre>
+import random
+
+# Generate a random integer between 0 and 10
+random_number = random.randint(0, 10)
+
+# Print the random number
+print(random_number)
+        </pre>
+      </section>
+      <section>
+        <h2>Simulating Falling Balls from a Height</h2>
+        <p>Now let's apply the concept of randomness to a simulation of falling balls from a height. It's like a game of Plinko, but with more math. We will generate a random height for each ball, and calculate the time it takes for the ball to hit the ground using the formula:</p>
+        <p>t = sqrt(2*h/g)</p>
+	<p>Now, let's apply the concept of 2D equations of motion and acceleration due to gravity in a fun way. Try to score as many points as possible by throwing the basketball into the hoop. The trajectory of the basketball is determined by the initial velocity and the angle at which it is thrown, taking into account the acceleration due to gravity.</p>
+    <iframe src="https://trinket.io/embed/glowscript/d62b4dcd89?start=result&showInstructions=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		</section>
+	</main>
+</body>
+</html>
+

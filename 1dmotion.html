@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1D Motion with Loops</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="Open Day 2023 Logo">
+	</header>
+	<main>
+        <h1>1D Motion with Loops</h1>
+		<section>
+			<h2>Introduction</h2>
+			<p>In this module, we will explore the basics of 1-dimensional motion and how to implement loops in Python to simulate motion. We will start with the equations of motion and then move on to using loops to calculate and simulate motion.</p>
+		</section>
+		<section>
+			<h2>Equations of Motion</h2>
+			<p>The equations of motion for an object in 1-dimensional motion are:</p>
+			<p>
+				\begin{align*}
+					x &= x_0 + v_0t + \frac{1}{2}at^2 \\
+					v &= v_0 + at
+				\end{align*}
+			</p>
+			<p>where <em>x</em> is the position, <em>v</em> is the velocity, <em>a</em> is the acceleration, and <em>t</em> is the time.</p>
+		</section>
+		<section>
+			<h2>Loops in Python</h2>
+			<p>Loops are a fundamental concept in programming that allow us to repeat a set of instructions multiple times. In Python, we can use <code>for</code> loops to simulate motion by updating the position and velocity at each time step. Here is an example of a loop that simulates motion:</p>
+			<blockquote>
+				<pre><code>for t in range(0, 10):
+    x = x + v*t + 0.5*a*t**2
+    v = v + a*t
+    print("At time", t, "s, the position is", x, "m")</code></pre>
+			</blockquote>
+			<p>This loop calculates the position and velocity of an object at each time step, updates them using the equations of motion, and prints the position at each time step. We can use this loop to simulate motion in 1-dimensional space.</p>
+		</section>
+		<section>
+			<h2>Simulation</h2>
+			<p>Here is an embedded simulation that demonstrates 1-dimensional motion using loops in Python:</p>
+            <iframe src="https://trinket.io/embed/glowscript/19107b8add?start=result&showInstructions=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+			<p>Can you change the initial position and velocity of the two balls so that they end up at the same final position?</p>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to Electric Fields</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="Open Day 2023 Logo">
+	</header>
+	<main>
+        <section>
+            <h2>What is an Electric Field?</h2>
+            <p>An electric field is a region in space where a charged particle experiences a force. The strength of the electric field at any point is defined as the force per unit charge that a small test charge would experience if placed at that point. The electric field is created by other charged particles in the vicinity, and the strength of the field depends on the distance between the particles and their charges. This relationship is described by Coulomb's law, which states that the force between two charged particles is proportional to the product of their charges and inversely proportional to the square of the distance between them.</p>
+            <p>Coulomb's law can be expressed mathematically as:</p>
+            <p>$$F = \frac{k \cdot q1\cdot q2}{r^2}$$</p>
+            <p>where F is the force between the two charges, k is Coulomb's constant (8.99 x 10^9 Nm^2/C^2), q1 and q2 are the charges of the particles, and r is the distance between them.</p>
+          </section>
+          <section>
+            <h2>Writing Functions in Python</h2>
+            <p>In Python, functions are reusable blocks of code that perform a specific task. They can take input arguments and return output values. To define a function in Python, you use the "def" keyword followed by the function name and the parameter list in parentheses. You then write the code for the function inside the indented block. Here's an example of a function that calculates the distance between two points in 2D space:</p>
+            <pre>
+    def distance(x1, y1, x2, y2):
+        dx = x2 - x1
+        dy = y2 - y1
+        return math.sqrt(dx**2 + dy**2)</pre>
+            <p>To use the function, you simply call it with the appropriate arguments:</p>
+            <pre>
+    d = distance(0, 0, 3, 4)
+    print(d)</pre>
+            <p>This would output the value 5.0, which is the distance between the points (0, 0) and (3, 4) in 2D space.</p
+      </section>
+      <section>
+        <h2>VPython Simulation of Electric Field</h2>
+        <p>Let's create a VPython simulation to visualize the electric field created by two charged balls. We'll place the balls at different positions along the y-axis and set them moving in the same direction. We'll also visualize the electric field lines using VPython's arrow object.</p>
+        <iframe src="https://trinket.io/embed/glowscript/4626ba0fc3?start=result&showInstructions=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>Try altering the initial velocity of the electron so that it is initially moving rightward at 1,000,000 m/s. Does it escape?</p>
+        <pre>
+electron.vel = vector(1000000, 0, 0)</pre>
+        <p>Try altering the initial velocity of the electron so that it orbits the proton in a circle. You'll need to point the velocity perpendicular to the line connecting them, and the speed should be roughly 1,000,000 m/s (!).</p>
+        <pre>
+electron.vel = vector(0, 1000000, 0)</pre>
+		</section>
+	</main>
+</body>
+</html>
+
